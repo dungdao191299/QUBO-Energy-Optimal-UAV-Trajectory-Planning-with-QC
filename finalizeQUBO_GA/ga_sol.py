@@ -29,7 +29,7 @@ def run_ga_optimization(Q, num_generations=5000, sol_per_pop=500):
         crossover_type="two_points",
         mutation_type="random",
         mutation_percent_genes=10,
-        # stop_criteria=["saturate_100"],
+        stop_criteria=["saturate_100"],
         keep_parents=10,
         save_best_solutions=False
     )
